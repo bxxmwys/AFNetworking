@@ -32,6 +32,7 @@ let package = Package(name: "AFNetworking",
                                   .watchOS(.v2)],
                       products: [.library(name: "AFNetworking",
                                           targets: ["AFNetworking"])],
+                      resources: [.copy("PrivacyInfo.xcprivacy")],
                       targets: [.target(name: "AFNetworking",
                                         path: "AFNetworking",
                                         publicHeadersPath: "")])
